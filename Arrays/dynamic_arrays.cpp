@@ -48,10 +48,8 @@ public:
     {
         return cap;
     }
-    int operator[](int index) const
-    {
-        if (index < 0 || index >= sz)
-        {
+    int operator[](int index) const{
+        if(index<0||index>=sz){
             throw out_of_range("Index out of range");
         }
         return data[index];
